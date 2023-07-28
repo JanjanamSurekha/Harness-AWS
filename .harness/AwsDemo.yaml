@@ -1,0 +1,40 @@
+pipeline:
+  name: Aws-Demo
+  identifier: AwsDemo
+  projectIdentifier: Jvts
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: CStage
+        identifier: CStage
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: CreateStack
+                  name: CreateStack_1
+                  identifier: CreateStack_1
+                  spec:
+                    provisionerIdentifier: ABC
+                    configuration:
+                      stackName: First-Stack
+                      connectorRef: AwsConnector
+                      region: ap-southeast-2
+                      templateFile:
+                        type: Remote
+                        spec:
+                          store:
+                            type: Github
+                            spec:
+                              paths:
+                                - Lab 1.1.1-CFN.yaml
+                              connectorRef: account.Github_OAuth_1687244923489
+                              repoName: Harness-AWS
+                              gitFetchType: Branch
+                              branch: main
+                      roleArn: ""
+                  timeout: 10m
+        tags: {}
