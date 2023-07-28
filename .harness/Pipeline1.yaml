@@ -1,0 +1,40 @@
+pipeline:
+  name: Pipeline-1
+  identifier: Pipeline1
+  projectIdentifier: Jvts
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: First-Stage
+        identifier: FirstStage
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: CreateStack
+                  name: CreateStack_1
+                  identifier: CreateStack_1
+                  spec:
+                    provisionerIdentifier: ABC
+                    configuration:
+                      stackName: First-Stack
+                      connectorRef: AwsConnector
+                      region: us-east-1
+                      templateFile:
+                        type: Remote
+                        spec:
+                          store:
+                            type: Github
+                            spec:
+                              paths:
+                                - Lab 1.1.1-CFN.yaml
+                              connectorRef: account.Github_OAuth_1687244783509
+                              repoName: Harness-AWS
+                              gitFetchType: Branch
+                              branch: main
+                      roleArn: ""
+                  timeout: 10m
+        tags: {}
