@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Harness_AWS_1690878290812-pr-trigger-input-set
+  identifier: Build_Harness_AWS_1690878290812prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: AWSNew
+  pipeline:
+    identifier: Build_Harness_AWS_1690878290812
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
