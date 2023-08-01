@@ -23,9 +23,9 @@ pipeline:
                     command: echo "Welcome to Harness CI"
           platform:
             os: Linux
-            arch: Arm64
+            arch: Amd64
           runtime:
-            type: Cloud
+            type: Docker
             spec: {}
   properties:
     ci:
