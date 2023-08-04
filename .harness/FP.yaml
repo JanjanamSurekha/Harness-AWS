@@ -30,7 +30,7 @@ pipeline:
                             type: Github
                             spec:
                               paths:
-                                - Lab 1.1.1-CFN.yaml
+                                - S3.yaml
                               connectorRef: GitHub
                               gitFetchType: Branch
                               branch: main
@@ -40,7 +40,7 @@ pipeline:
         tags: {}
         variables: []
   variables:
-    - name: surekha12345
+    - name: aba12345
       type: String
       description: ""
       required: false
