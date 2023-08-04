@@ -36,8 +36,8 @@ pipeline:
                               branch: main
                       roleArn: ""
                       parameterOverrides:
-                        - name: String
-                          value: aba12345
+                        - name: S3bucket
+                          value: aba12
                           type: String
                   timeout: 10m
         tags: {}
