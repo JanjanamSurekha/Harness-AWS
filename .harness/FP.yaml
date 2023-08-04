@@ -38,4 +38,15 @@ pipeline:
                       parameterOverrides: []
                   timeout: 10m
         tags: {}
-  variables: []
+        variables:
+          - name: BucketName
+            type: String
+            description: ""
+            required: false
+            value: surekha12345
+  variables:
+    - name: BucketName
+      type: String
+      description: ""
+      required: false
+      value: aba12345
