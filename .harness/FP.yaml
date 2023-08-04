@@ -39,7 +39,7 @@ pipeline:
                   timeout: 10m
         tags: {}
   variables:
-    - name: surekha12345
+    - name: BucketName
       type: String
       description: ""
       required: false
