@@ -43,4 +43,4 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: <+input>
+      value: aba12345
