@@ -38,13 +38,13 @@ pipeline:
                   timeout: 10m
         tags: {}
         variables:
-          - name: aba12345
+          - name: stage_variable
             type: String
             description: ""
             required: false
             value: <+input>
   variables:
-    - name: aba12345
+    - name: cc
       type: String
       description: ""
       required: false
