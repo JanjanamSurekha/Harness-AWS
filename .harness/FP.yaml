@@ -38,7 +38,7 @@ pipeline:
                   timeout: 10m
         tags: {}
   variables:
-    - name: Aba12345
+    - name: S3_bucket_name
       type: String
       description: ""
       required: false
