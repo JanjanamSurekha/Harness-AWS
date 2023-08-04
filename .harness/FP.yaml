@@ -38,9 +38,4 @@ pipeline:
                       parameterOverrides: []
                   timeout: 10m
         tags: {}
-  variables:
-    - name: aba12345
-      type: String
-      description: ""
-      required: true
-      value: <+input>
+  variables: []
