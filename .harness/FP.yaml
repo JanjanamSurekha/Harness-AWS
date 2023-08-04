@@ -39,7 +39,7 @@ pipeline:
                   timeout: 10m
         tags: {}
   variables:
-    - name: surekha12345
+    - name: aba12345
       type: String
       description: ""
       required: true
