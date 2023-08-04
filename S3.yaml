@@ -3,7 +3,6 @@ Description: "Template for S3 Bucket"
 Parameters:
   surekhabucket:
     Type: String
-    ParameterProperty: <+input>
 Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
