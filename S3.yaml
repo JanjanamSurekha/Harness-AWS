@@ -4,9 +4,6 @@ Parameters:
   S3bucket:
     Type: String
     Default: <+input>
-  Region:
-    Type: String
-    Default: us-east-1
 Resources:
   Bucket:
     Type: AWS::S3::Bucket
