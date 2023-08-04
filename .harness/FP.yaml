@@ -35,6 +35,10 @@ pipeline:
                               gitFetchType: Branch
                               branch: main
                       roleArn: ""
+                      parameterOverrides:
+                        - name: String
+                          value: aba12345
+                          type: String
                   timeout: 10m
         tags: {}
   variables:
