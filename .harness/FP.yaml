@@ -40,7 +40,7 @@ pipeline:
         tags: {}
         variables: []
   variables:
-    - name: aba12345
+    - name: custom
       type: String
       description: ""
       required: false
