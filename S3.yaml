@@ -1,12 +1,12 @@
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "Template for S3 Bucket"
 Parameters:
-  S3bucket:
+  surekhabucket:
     Type: String
-    Default: <+input>
+    ParameterProperty: <+input>
 Resources:
-  Bucket:
+  S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Ref S3bucket
+      BucketName: !Ref surekhabucket
 
