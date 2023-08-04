@@ -35,10 +35,7 @@ pipeline:
                               gitFetchType: Branch
                               branch: main
                       roleArn: ""
-                      parameterOverrides:
-                        - name: S3Bucket
-                          value: aba12345
-                          type: String
+                      parameterOverrides: []
                   timeout: 10m
         tags: {}
         variables: []
