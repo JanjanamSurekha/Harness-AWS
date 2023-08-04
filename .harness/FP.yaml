@@ -30,7 +30,7 @@ pipeline:
                             type: Github
                             spec:
                               paths:
-                                - S3.yaml
+                                - Lab 1.1.1-CFN.yaml
                               connectorRef: GitHub
                               gitFetchType: Branch
                               branch: main
