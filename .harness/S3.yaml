@@ -37,3 +37,15 @@ pipeline:
                       roleArn: ""
                   timeout: 10m
         tags: {}
+        variables:
+          - name: aba12345
+            type: String
+            description: ""
+            required: false
+            value: <+input>
+  variables:
+    - name: aba12345
+      type: String
+      description: ""
+      required: false
+      value: <+input>
