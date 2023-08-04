@@ -20,7 +20,7 @@ pipeline:
                   spec:
                     provisionerIdentifier: ABC
                     configuration:
-                      stackName: s3-bucket
+                      stackName: F-S
                       connectorRef: AwsConnector
                       region: ap-southeast-2
                       templateFile:
