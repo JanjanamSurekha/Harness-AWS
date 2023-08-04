@@ -38,7 +38,7 @@ pipeline:
                   timeout: 10m
         tags: {}
   variables:
-    - name: S3_bucket_name
+    - name: S3bucket
       type: String
       description: ""
       required: false
