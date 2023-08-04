@@ -35,9 +35,6 @@ pipeline:
                               gitFetchType: Branch
                               branch: main
                       roleArn: ""
-                      parameterOverrides:
-                        - name: S3Bucket
-                          value: surekha12345
-                          type: String
+                      parameterOverrides: []
                   timeout: 10m
         tags: {}
