@@ -35,17 +35,11 @@ pipeline:
                               gitFetchType: Branch
                               branch: main
                       roleArn: ""
+                      parameterOverrides:
+                        - name: sbucket
+                          value: aba12345
+                          type: String
                   timeout: 10m
         tags: {}
-        variables:
-          - name: stage_variable
-            type: String
-            description: ""
-            required: false
-            value: <+input>
-  variables:
-    - name: cc
-      type: String
-      description: ""
-      required: false
-      value: <+input>
+        variables: []
+  variables: []
