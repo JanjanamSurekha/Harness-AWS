@@ -35,10 +35,7 @@ pipeline:
                               gitFetchType: Branch
                               branch: main
                       roleArn: ""
-                      parameterOverrides:
-                        - name: sbucket
-                          value: aba1234
-                          type: String
+                      parameterOverrides: []
                   timeout: 10m
         tags: {}
         variables: []
