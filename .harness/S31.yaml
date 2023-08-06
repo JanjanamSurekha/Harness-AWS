@@ -41,3 +41,9 @@ pipeline:
                           type: String
                   timeout: 10m
         tags: {}
+  variables:
+    - name: sbucket
+      type: String
+      description: ""
+      required: false
+      value: <+input>
