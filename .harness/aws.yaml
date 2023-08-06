@@ -1,0 +1,39 @@
+pipeline:
+  name: aws
+  identifier: aws
+  projectIdentifier: AWS
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: cus-sta
+        identifier: cussta
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: CreateStack
+                  name: stack
+                  identifier: stack
+                  spec:
+                    provisionerIdentifier: pro
+                    configuration:
+                      stackName: jvts-aws-1
+                      connectorRef: AWS
+                      region: ap-southeast-2
+                      templateFile:
+                        type: Remote
+                        spec:
+                          store:
+                            type: Github
+                            spec:
+                              paths:
+                                - Lab 1.1.1-CFN.yaml
+                              connectorRef: GitHub
+                              gitFetchType: Branch
+                              branch: main
+                      roleArn: ""
+                  timeout: 10m
+        tags: {}
