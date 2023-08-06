@@ -37,7 +37,7 @@ pipeline:
                       roleArn: ""
                       parameterOverrides:
                         - name: sbucket
-                          value: xyz2
+                          value: xyz3
                           type: String
                   timeout: 10m
         tags: {}
