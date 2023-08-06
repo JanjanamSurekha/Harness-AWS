@@ -20,7 +20,7 @@ pipeline:
                   spec:
                     provisionerIdentifier: AWS
                     configuration:
-                      stackName: S3
+                      stackName: S3-1
                       connectorRef: AWS
                       region: ap-southeast-2
                       templateFile:
@@ -37,7 +37,7 @@ pipeline:
                       roleArn: ""
                       parameterOverrides:
                         - name: sbucket
-                          value: abc1234
+                          value: abc1
                           type: String
                   timeout: 10m
         tags: {}
