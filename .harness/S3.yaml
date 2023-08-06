@@ -20,7 +20,7 @@ pipeline:
                   spec:
                     provisionerIdentifier: AWS
                     configuration:
-                      stackName: S3-1
+                      stackName: S3-stack
                       connectorRef: AWS
                       region: ap-southeast-2
                       templateFile:
