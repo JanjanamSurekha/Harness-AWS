@@ -30,14 +30,14 @@ pipeline:
                             type: Github
                             spec:
                               paths:
-                                - S3.yaml
+                                - Lab 1.1.1-CFN.yaml
                               connectorRef: GitHub
                               gitFetchType: Branch
                               branch: main
                       roleArn: ""
                       parameterOverrides:
-                        - name: bucket
-                          value: s3buck
+                        - name: sbucket
+                          value: abc1234
                           type: String
                   timeout: 10m
         tags: {}
