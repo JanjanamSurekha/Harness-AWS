@@ -4,5 +4,5 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: aws1
+      BucketName: pro1
 
