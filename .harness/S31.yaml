@@ -46,10 +46,10 @@ pipeline:
             type: String
             description: ""
             required: false
-            value: xyz1
+            value: <+input>
   variables:
     - name: sbucket
       type: String
       description: ""
       required: false
-      value: <+input>
+      value: xyz1
