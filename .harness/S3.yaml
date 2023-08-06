@@ -30,7 +30,7 @@ pipeline:
                             type: Github
                             spec:
                               paths:
-                                - Lab 1.1.1-CFN.yaml
+                                - S3.yaml
                               connectorRef: GitHub
                               gitFetchType: Branch
                               branch: main
@@ -39,4 +39,9 @@ pipeline:
                   timeout: 10m
         tags: {}
         variables: []
-  variables: []
+  variables:
+    - name: bucket
+      type: String
+      description: ""
+      required: false
+      value: <+input>
